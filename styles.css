@@ -1,0 +1,317 @@
+@charset "utf-8";
+
+/*Project V3
+  Author: Zachary Potts
+  Filename:styles.css
+  Date: 05-20-19
+*/
+
+
+/*Reset styles*/
+html, body, div, h1, h2, p, address, img, article, aside, figure, footer, header, hgroup, nav{
+   margin: 5px;
+   padding: 0;
+   border: 0;
+   font-size: 102%;
+   font-family: "Verdana", "Arial", "sans-serif";
+   color: rgb(85, 85, 85);
+}
+
+
+/*sets up the background img*/
+html {
+   background-image: url("background.png");
+   font-family: "Verdana", "Arial", "sans-serif";
+   color: rgb(85, 85, 85);
+}
+
+body {
+   max-width: 1350px;
+   min-width: 360px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+/*ctrls the logo in the header*/
+#logo {
+   position: relative;
+   display: block;
+   width: 70%;
+   max-width: 440px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   -webkit-transform: scale(0.90);
+   transform: scale(0.90);
+}
+
+
+/*ctrls the nav bar*/
+.hnav {
+   text-align: center;
+   margin: 0;
+   margin-bottom: 10px;
+   padding: 0;
+}
+
+.hnav li {
+   display: inline;
+}
+
+.hnav a {
+   padding: 15px;
+   color: grey;
+   text-decoration: none;
+}
+
+
+/*M5LO5 Demonstrate the use of flexboxes on a web page (CSS document where you use flexboxes; 
+explain their impact on the page's layout; this can be a new page or a redo of an existing page)
+This controls the columns and rows of my index page making it scalable to the size of the window.*/
+
+/*M5LO7 Demonstrate use of properties of flexbox containers (CSS, document what flexbox 
+container properties you use and their impacts, for one CSS selector using them)
+I used the wrap propweity to make the colums wrap around and attach to the bottom when the 
+number switched from 4 to 2 and then to 1*/
+div.grid {
+   display: -webkit-flexbox;
+   display: flex;
+   -webkit-flex-flow: wrap;
+   flex-flow: wrap;
+   padding: 0 4px;
+}
+
+
+/*M5LO6 Demonstrate use of properties of flexbox items (CSS, document what flexbox 
+item properties you use and their impacts, for one CSS selector using them)
+I use the width property to fit the columns to 25% of the page width*/
+div.column {
+   margin: 0;
+   -webkit-flex: 25%;
+   flex: 25%;
+   max-width: 25%;
+}
+
+img.imgs {
+   width: 96.5%;
+   padding: 0;
+   margin: 0;
+   border: 0;
+   margin-top: 8px;
+   box-shadow: 0 0 25px gray;
+}
+
+a#navcon {
+   display: none;
+}
+
+div.rows {
+   display: block;
+   max-width: 100%;
+   margin: auto;
+   padding: 0;
+}
+
+div.rows div {
+   display: inline-block;
+   width: 32%;
+   margin: auto;
+   padding: 0;
+}
+
+div.rows div a img {
+   width: 100%
+}
+
+
+/*Brings the recent work page down to 2 columns*/
+@media screen and (max-width: 1000px) {
+   div.column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+   }
+}
+
+
+/*controls the sizing of the portfolio page*/
+@media screen and (max-width: 750px) {
+   div.rows div {
+      display: inline-block;
+      width: 100%;
+      margin: auto;
+      padding: 0;
+   }
+}
+
+
+/*M5LO3 Use media queries to format a page differently for phones vs. PCs. 
+(CSS, note where these are in your CSS and describe the overall impact they have on the site)
+moves everything into a single columns and hides the nav menu.*/
+@media screen and (max-width: 480px) {
+   /*makes all the imgs fill the screen*/
+   img.imgs {
+      width: 100%;
+   }
+   div.column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+      max-width: 100%;
+   }
+   /*M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas) 
+ (CSS, note where the menu is on your site and how it behaves)
+ the menu is on the top of every page on the site. it collapses the nav into a trigram
+ I chose to do it this way because I wanted it to feel like it was still in the site and 
+ not floating above it.*/
+   a#navcon {
+      display: block;
+      padding: 15px;
+      color: grey;
+      text-decoration: none;
+      font-size: 2em;
+   }
+   nav#navbar ul {
+      display: none;
+   }
+   a#navcon:hover+ul,
+   nav#navbar ul:hover {
+      display: block;
+   }
+}
+
+#RECWOK h1 {
+   margin-top: 20px;
+}
+
+
+/*ctrls the headers on the about page*/
+h1 {
+   font-size: 1.5em;
+}
+
+#about {
+   padding: 0;
+   padding-top: 5em;
+   margin-bottom: 0px;
+}
+
+h2 {
+   font-size: 1.5em;
+   color: rgb(85, 85, 85);
+   padding: 1em 0 0 0;
+}
+
+#v1 {
+   padding-top: 2em;
+}
+
+#footnote {
+   font-style: italic;
+   margin: auto;
+   margin-top: 30px;
+   color: rgb(100, 100, 100);
+}
+
+#about_me {
+   padding: 2em 0 0 0;
+   clear: both;
+}
+
+#photo {
+   margin-bottom: -55px;
+   margin-left: -20px;
+}
+
+#atlic {
+   font-style: italic;
+}
+
+#rite {
+   color: rgb(100, 100, 100);
+   padding-top: 5em;
+   text-align: center;
+   font-style: italic;
+   font-size: .6em;
+}
+
+#insta {
+   display: inline-block;
+   width: 13px;
+   margin-bottom: -1px;
+   margin-right: -1px;
+}
+
+#porta {
+   float: left;
+   max-width: 200px;
+   margin-top: -45px;
+}
+
+.portf {
+   margin-left: 40px;
+}
+
+.boxx {
+   border: 2px inset rgba(80, 80, 80, 0.5);
+   border-radius: 2px;
+   background-color: rgba(85, 85, 85, 0.17);
+}
+
+
+/*ctrls the footer styles*/
+footer {
+   color: rgb(100, 100, 100);
+   text-align: center;
+   padding-top: 5em;
+   font-size: .9em;
+   margin: auto;
+}
+
+footer>address>a {
+   text-align: center;
+   color: rgb(100, 100, 100);
+   text-decoration: none;
+}
+
+
+/*table styles*/
+
+/*M6LO7 Demonstrate how to format a table with CSS (CSS, group your table styles together and note the overall impact they have on the HTML)
+The first formating style makes the table equal to the width of the page. the second draws a 1px solid border around the cells the second and 
+third specifics the padding around the contents and moves the contents in the center.*/
+table {
+   width: 100%;
+}
+
+table,
+th,
+td {
+   border: 1px solid rgba(80, 80, 80, 0.5);
+}
+
+th,
+td {
+   padding: 10px;
+   text-align: center;
+}
+
+
+/*Img table styles*/
+.T {
+   width: 65px;
+}
+
+.T:hover {
+   width: 150px;
+}
+
+
+/* ContainerAffected::after{
+	clear:both;
+	content: "";
+	display: table;
+} */
+

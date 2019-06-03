@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <!--
+         Project V3
+         Author: Zachary Potts
+         Filename:table.html
+         Date: 05-22-19
+         -->
+      <title>Details</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link href="styles.css" rel="stylesheet" />
+   </head>
+   <body>
+      <header>
+         <img id="logo" src="l0go.png" alt="Z8 labs photography" usemap="#homem" />
+         <map name="homem">
+            <area shape="rect" coords="172,124,606,200" href="#" alt="Z8_labs">
+         </map>
+      </header>
+      <nav id="navbar">
+         <a id="navcon" href="#">☰</a>
+         <ul class="hnav">
+            <li><a href="index.html">Recent Work</a></li>
+            <li><a href="port.html">Portfolio</a></li>
+            <li><a href="table.html">Details</a></li>
+            <li><a href="about.html">About</a></li>
+         </ul>
+      </nav>
+      <article id="TITLE">
+         <h1>
+            Details
+         </h1>
+         <p>
+            This page gives details about some of my images.
+         </p>
+      </article>
+      <!--M6LO3 Demonstrate how to create a table (HTML, explain table's purpose; it needs to be appropriate data for a table, 
+         and have at least 2 columns and 3 rows, appropriate use of thead/tbody/tfooter, and cells using th/td appropriately)
+         Table displays information about some of my images. I probably should not display this information like this but 
+         I couldn't think of anything better that would fit the page. Suggestions would be appreciated-->  
+      <table>
+         <tr>
+            <th>Photo</th>
+            <th>Camera</th>
+            <th>Type</th>
+            <th>Date taken</th>
+         </tr>
+         <tr>
+            <td><img class="T" src="photos/02.jpg" alt="" ></td>
+            <td>Sony NEX-5N</td>
+            <td>Macro</td>
+            <td>03-09-19</td>
+         </tr>
+         <tr>
+            <td><img class="T" src="photos/01.jpg" alt="" ></td>
+            <td>Sony NEX-5N</td>
+            <td>Macro</td>
+            <td>04-17-19</td>
+         </tr>
+         <tr>
+            <td><img class="T" src="photos/04.jpg" alt="" ></td>
+            <td>Sony NEX-5N</td>
+            <td>Studio</td>
+            <td>05-08-19</td>
+         </tr>
+         <tr>
+            <td><img class="T" src="photos/06.jpg" alt="" ></td>
+            <td>Sony NEX-5N</td>
+            <td>Landscape</td>
+            <td>04-30-19</td>
+         </tr>
+         <tr>
+            <td><img class="T" src="photos/07.jpg" alt="" ></td>
+            <td>Phantom 3 Pro</td>
+            <td>Aerial</td>
+            <td>03-21-19</td>
+         </tr>
+         <tr>
+            <td><img class="T" src="photos/08.jpg" alt="" ></td>
+            <td>Sony NEX-5N</td>
+            <td>Landscape</td>
+            <td>04-08-19</td>
+         </tr>
+         <tr>
+            <td><img class="T" src="photos/10.jpg" alt="" ></td>
+            <td>Phantom 3 Pro</td>
+            <td>Aerial</td>
+            <td>05-08-19</td>
+         </tr>
+         <tr>
+            <td><img class="T" src="photos/11.jpg" alt="" ></td>
+            <!--M6LO4 Demonstrate how to span multiple rows or multiple columns in a table 
+               (HTML, document where you write HTML that causes a multi-row or multi-column span; 
+               say which one it is as well: row or column, or both) spans 2 columns-->
+            <td colspan="2">Phantom 3 Pro</td>
+            <td>03-18-19</td>
+         </tr>
+      </table>
+      <footer>
+         <p id="rite">
+            *note dates may be incorrect.<br>
+            All images hosted on this site are property of Z8_labs.
+         </p>
+         <address>
+            <a href="tel:+11235556978">&#9743; 123-555-6978</a> &nbsp; &nbsp;
+            <a href="mailto:fake@gmail.org">&#9993; fake@gmail.org</a> &nbsp; &nbsp; <br>
+            <a href="https://www.instagram.com/z8_labs/"> <img id="insta" src="insta.png" alt="insta"/> @Z8_labs</a>
+         </address>
+      </footer>
+   </body>
+</html>
+
