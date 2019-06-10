@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <!--
+         Project V4
+         Author: Zachary Potts
+         Filename:work.html
+         Date: 05-22-19
+         -->
+      <title>Behind the Scenes</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link href="styles.css" rel="stylesheet" />
+   </head>
+   <body>
+      <header>
+         <img id="logo" src="l0go.png" alt="Z8 labs photography" usemap="#homem" />
+         <map name="homem">
+            <area shape="rect" coords="172,124,606,200" href="#" alt="Z8_labs">
+         </map>
+      </header>
+      <nav id="navbar">
+         <a id="navcon" href="#">☰</a>
+         <ul class="hnav">
+            <li><a href="index.html">Recent Work</a></li>
+            <li><a href="port.html">Portfolio</a></li>
+            <li><a href="work.html">Behind the Scenes</a></li>
+            <li><a href="about.html">About</a></li>
+         </ul>
+      </nav>
+      <article id="TITLE">
+         <h1>
+            Behind the Scenes
+         </h1>
+      </article>
+      <p>
+         A quick look behind the scenes showing the process from beging to end from taking a photo to editing a photo.
+      </p>
+      <article>
+         <h1 id="video">
+            Editing
+         </h1>
+         <p>Below is a video showcasing the editing workflow.</p>
+         <!--M8LO8 Demonstrate the use of the <video> element for embedding video in a Web page (HTML)-->
+         <video controls poster="editing/original.jpg">
+            <source src="editing/editing.mp4" type="video/mp4" />
+            <track kind="captions" label="Captions" default src="captions.vtt" />
+            <p>To play this video, your browser needs to support HTML5.</p>
+         </video>
+      </article>
+   </body>
+</html>

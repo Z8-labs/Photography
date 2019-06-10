@@ -3,13 +3,13 @@
    <head>
       <meta charset="utf-8">
       <!--
-         Project V3
+         Project V4
          Author: Zachary Potts
          Filename:about.html
          Date: 05-22-19
          -->
       <title>About</title>
-	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link href="styles.css" rel="stylesheet" />
    </head>
    <body>
@@ -21,7 +21,7 @@
          <ul class="hnav">
             <li><a href="index.html">Recent Work</a></li>
             <li><a href="port.html">Portfolio</a></li>
-            <li><a href="table.html">Details</a></li>
+            <li><a href="work.html">Behind the Scenes</a></li>
             <li><a href="about.html">About</a></li>
          </ul>
       </nav>
@@ -46,74 +46,48 @@
             but my cheap camera phone could only do so much.  In 2017 I bought my first cheap camera drone and was amazed at the new angels and potential that opened up. 
             A short time later I made the investment and bought a lightly used DJI Phantom 3 Pro. This where the hobby truly took off.
          </p>
-         <p>
+         <p class="brake">
             Today I shoot with a Sony NEX-5N with a 16-50mm lens, a oneplus 2 phone for wide angle shots and field editing, 
-            and my Phantom 3 for aerial photography. 
+            and my Phantom 3 for aerial photography. If you are intrested in my work check out my Instagram portfolio at: <a href="https://www.instagram.com/z8_labs/"> @Z8_labs</a>
          </p>
       </article>
       <article>
          <h1 id="about">About this page</h1>
          <p>This site was developed as an academic project by Zachary Potts for CIS 155, HTML and CSS coding.</p>
-         <h2 id="v1">V1</h2>
-         <p>04-23-19</p>
-         <!--M4LO1 Demonstrate the use of figure boxes (HTML)-->
-         <figure>
-            <ol class="boxx">
-               <li>Added the recent work page as a index page.</li>
-               <li>Added About page.</li>
-               <li>Added Portfolio page.</li>
-               <li>Added Collaboration page.</li>
-               <li>Added Work flow page.</li>
-               <li>Added logo.png in top of the future nav section (most likely will change).</li>
-               <li>Added css style sheet for basic text coloring and background color change (no its not white, and yes it does make a difference.)</li>
-            </ol>
-         </figure>
-         <h2>V2</h2>
-         <p>05-07-19</p>
-         <figure>
-            <ol class="boxx">
-               <li>Populated the portfolio page with several galleys.</li>
-               <li>Changed the page layout to a vertical oriented layout.</li>
-               <li>New logo at the top of the page. (Will prob change in the future)</li>
-               <li>Populated the home page with more content.</li>
-               <li>Different styling of the site.</li>
-               <li>Added reset to the style sheet</li>
-               <li>Put all of the images in one separate folder (declutter).</li>
-               <li>Upped the quality of the images that are displayed on the page</li>
-            </ol>
-         </figure>
-         <h2>V3</h2>
-         <figure>
-            <ol class="boxx">
-               <li>Added a table to display info about photos</li>
-               <li>Removed the Work flow page.</li>
-               <li>Removed the Collaboration page.</li>
-               <li>Populate the home page with more content.</li>
-               <li>Layout better suited for mobile use.</li>
-               <li>Full framed images eg (images with different aspect ratios)</li>
-               <li>Added a details page</li>
-               <li>Added a table on the details page</li>
-            </ol>
-         </figure>
-         <h2>What to expect in V4</h2>
-         <figure>
-            <ol class="boxx">
-               <li>Populate the portfolio page with more galleys and passably change there shape.</li>
-               <li>full framed photos in the portfolio</li>
-               <li>full framed photos for the portfolio links</li>
-               <li>Work on the styling and layout of the portfolio</li>
-               <li>Layout tweaking suited for mobile use.</li>
-               <li>Full framed images in the gallery</li>
-            </ol>
-         </figure>
+         <!--M8LO9  Demonstrate the use of the iframe element (HTML)-->
+         <iframe src="https://z8-labs.github.io/Photography/IFrameTarget.html">
+         alternative content for browsers which do not support iframe.
+         </iframe>
       </article>
+      <section class="brake">
+         <h1 class="brake">
+            Contact
+         </h1>
+         <p id="small">*Note that this is for demistration pereuses only. This form does not submit data. <br>
+            If you have any intrist in contacting me use my instagram located at the bottom of the page.<br>
+         </p>
+         <form action="#" method="post">
+            <!--M7LO5 Demonstrate the use of a text box in a form-->
+            <label for="NameB">Name*</label>
+            <input type="text" id="NameB" name="name" required />
+            <label for="EmailB">Email*</label>
+            <input type="text" id="EmailB" name="email" required />
+            <!--The regualr expressions were coppied form case problem 7-->
+            <label for="PhoneB">Phone Number</label>
+            <input type="tel" id="PhoneB" name="phone" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+            <!--M7LO9 Demonstrate the use of a text area in a form-->
+            <label for="MessageB">Message*</label>
+            <textarea id="MessageB" name="message" required></textarea>
+            <p class="brake">
+               <!--M7LO10 Demonstrate the use of a submit button in a form-->
+               <input type="submit" id="but" value="Submit"/>
+            </p>
+         </form>
+      </section>
       <footer>
          <address>
-            <a href="tel:+11235556978">&#9743; 123-555-6978</a> &nbsp; &nbsp;
-            <a href="mailto:fake@gmail.org">&#9993; fake@gmail.org</a> &nbsp; &nbsp;
             <a href="https://www.instagram.com/z8_labs/"> <img id="insta" src="insta.png" alt="insta"/> @Z8_labs</a>
          </address>
       </footer>
    </body>
 </html>
-
